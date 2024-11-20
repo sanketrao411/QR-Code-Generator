@@ -1,0 +1,39 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QR Code Generator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>QR Code Generator</h1>
+	<form id="qr-form">
+        <div class="content">
+            <label for="qr-id" class="margin">ID:</label>
+            <input type="text" id="qr-id" class="qr-input" placeholder="Enter ID" required>
+        </div>
+        <div class="content">
+            <label for="qr-name" class="margin">Name:</label>
+            <input type="text" id="qr-name" class="qr-input" placeholder="Enter Product Name" required>
+        </div>
+        <div class="content">
+            <label for="qr-price" class="margin">Price:</label>
+            <input type="text" id="qr-price" class="qr-input" placeholder="Enter Price" required>
+        </div>
+        <div class="content">
+            <label for="qr-quantity" class="margin">Quantity:</label>
+            <input type="number" id="qr-quantity" class="qr-input" placeholder="Enter Quantity" required>
+        </div>
+        <button type="submit" class="content">Generate QR Code</button>
+    </form>
+	<div id="qr-result">
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
